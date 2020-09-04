@@ -7,5 +7,5 @@ document.querySelector('.menu-btn').addEventListener('click',()=>{
 });
 
 $(document).ready(function(){
-    $('.slider').bxSlider();
+    $('.slider').bxSlider({mode:'fade', controls:false, auto:true});
   });

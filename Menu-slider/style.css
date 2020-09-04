@@ -5,8 +5,8 @@
 }
 
 body{
-    background: black;
-    color: white;
+    background:white;
+    color:black;
 
 }
 
@@ -48,7 +48,8 @@ ul{
     align-items: center;
     height: 50px;
     padding-top: 15px;
-    background: gray;        
+    background: gray;   
+    margin-bottom: 20px;     
 }
 
 .nav-main ul{
@@ -71,7 +72,7 @@ ul{
 }
 
 .contac{
-    
+    z-index: 2;
     display: none;
     background: gray;
     justify-content: center;
@@ -96,7 +97,20 @@ ul{
 
 .contac.show{
 display: block;
-
+}
+/*Slider*/
+.slider-wrap{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Cards*/
+.cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.card-one,.card-two{
+    text-align: center;
 }
 
 @media(max-width: 700px){
@@ -115,6 +129,7 @@ display: block;
     }
 
  .nav-main ul.nav-menu{
+     z-index: 2;
      display: block;
      position: absolute;
      height: 100%;
@@ -153,6 +168,10 @@ display: block;
 }
 .nav-main ul.nav-menu li.desple .contac li.contac-two{
     padding-left: 1px;
+}
+/*Slider*/
+.slider-wrap{
+    z-index: 0;
 }
 
 }
